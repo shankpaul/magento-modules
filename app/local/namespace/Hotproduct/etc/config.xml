@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<!-- The root node for Magento module configuration -->
+
+<config>
+    
+    <modules>
+        <Nuevalgo_Hotproduct>
+            <version>0.1.1</version>                        
+        </Nuevalgo_Hotproduct>
+    </modules>
+    
+    <global>
+        <models>
+            <nuevalgo_hotproduct>
+                <class>Nuevalgo_Hotproduct_Model</class>
+            </nuevalgo_hotproduct>
+        </models>
+        <resources>
+            <hot_setup>
+                <setup>
+                    <module>Nuevalgo_Hotproduct</module>
+                    <class>Nuevalgo_Hotproduct_Model_Mysql4_Setup</class>
+                </setup>
+            </hot_setup>
+        </resources>
+        <blocks>
+            <hotproduct>
+                <class>Nuevalgo_Hotproduct_Block</class>
+            </hotproduct>
+        </blocks>
+    </global>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <hotproduct>
+                    <file>hotproduct.xml</file>
+                </hotproduct>
+            </updates>
+        </layout>
+    </frontend>
+    
+</config>

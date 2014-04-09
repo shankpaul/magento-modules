@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+     <modules>
+        <Nuevalgo_Shippingoffer>
+            <version>0.1.0</version>
+        </Nuevalgo_Shippingoffer>
+    </modules>   
+    <global>
+        <models>
+            <shippingoffer>
+                <class>Nuevalgo_Shippingoffer_Model</class>                
+            </shippingoffer>            
+        </models>
+         <blocks>
+            <shippingoffer>
+                <class>Nuevalgo_Shippingoffer_Block</class>                
+            </shippingoffer>            
+        </blocks> 
+        <helpers>
+            <shippingoffer>
+                <class>Nuevalgo_Shippingoffer_Helper</class>                
+            </shippingoffer>            
+        </helpers>       
+    </global>
+     <frontend>
+        <layout>
+            <updates>
+                <shippingoffer>
+                    <file>shippingoffer.xml</file>
+                </shippingoffer>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <carriers>
+            <shippingoffer>
+                <active>0</active>
+                <name>Advanced Free Ground Shipping Method</name>
+                <title>Free ground shipping</title>
+                <model>shippingoffer/carrier_shippingoffer</model>
+                <tagmessage>YOU ARE {{amount}} FROM FREE GROUND SHIPPING.</tagmessage>
+                <free_shipping_subtotal>50</free_shipping_subtotal>
+                <sallowspecific>0</sallowspecific>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <sort_order>0</sort_order>
+            </shippingoffer>
+        </carriers>
+    </default>
+</config>

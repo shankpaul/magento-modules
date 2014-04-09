@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+     <modules>
+        <Nuevalgo_Helloworld>
+            <version>0.1.0</version>
+        </Nuevalgo_Helloworld>
+    </modules>
+    <global>
+        <blocks>
+            <helloworld>
+                <rewrite>
+                    <helloworld>Nuevalgo_Helloworld_Block_Helloworld</helloworld>
+                </rewrite>
+            </helloworld>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <helloworld>
+                <use>standard</use>
+                <args>
+                    <module>Nuevalgo_Helloworld</module>
+                    <frontName>helloworld</frontName>
+                </args>
+            </helloworld>
+        </routers>
+        <layout>
+            <updates>
+                <helloworld>
+                    <file>helloworld.xml</file>
+                </helloworld>
+            </updates>
+        </layout>
+    </frontend>
+</config>
